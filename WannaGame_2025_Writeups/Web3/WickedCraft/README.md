@@ -153,10 +153,8 @@ Lúc này, bạn quay lại trang Dashboard của giải đấu (hoặc nc tới
 
 **Flag của bài này là:**
 ```
-WannaGame{Cu5t0m_VM_1s_Fun_But_D4ng3r0us_R1ght?}
+W1{THIS-1s_wIcKeDCraft-CHAlL3nge_fLAG5060}
 ```
-
-*(Lưu ý: Flag này là ví dụ minh họa, flag thật sẽ phụ thuộc vào server của giải đấu).*
 
 ### Bài học rút ra (Post-Mortem)
 Cảm giác nhìn thấy số dư nhảy lên và dòng chữ `isSolved: True` đúng là phê không tưởng! Bài này dạy cho mình bài học xương máu:
