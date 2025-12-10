@@ -21,9 +21,6 @@ Giải đấu này team mình đã chiến đấu hết mình và giải quyết
 
 ### 📂 Cấu trúc thư mục
 - `WannaGame_2025_Writeups/`: Chứa writeups và source code của giải WannaGame 2025.
-- `CTF/`: Các bài lab và challenge luyện tập khác.
-- `CTFPortfolio/`: Source code cho trang Portfolio cá nhân.
-- `public_html/`: Frontend assets.
 
 ## 🤝 Kết nối
 Nếu bạn có thắc mắc hay muốn trao đổi về kỹ thuật, đừng ngần ngại liên hệ với mình nhé!
