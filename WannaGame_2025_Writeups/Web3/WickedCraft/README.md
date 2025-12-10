@@ -112,21 +112,55 @@ tx = aggregator.functions.swap(payload).build_transaction({
 # ... ký và gửi tx ...
 ```
 
-### Kết quả chạy script
+## 4. Khai thác & Lấy cờ (Exploitation & Flag Capture)
 
-Khi chạy script, nếu mọi thứ chuẩn chỉ từng milimet, bạn sẽ thấy dòng chữ chiến thắng:
+Sau khi đã code xong xuôi, giờ là giây phút của sự thật. Hít một hơi thật sâu và chạy script nào!
+
+### Chạy Script
+Mở terminal lên và gõ lệnh:
 
 ```bash
 $ python3 solve_wicked.py
+```
+
+### Diễn biến trên Terminal
+Nếu mọi thứ chuẩn chỉ từng milimet (không sai lệch dù chỉ 1 byte offset), bạn sẽ thấy dòng chữ chiến thắng hiện ra như sau:
+
+```bash
 Player Address: 0x789...
 WannaCoin: 0x123...
 Aggregator: 0x456...
 >>> Đang tạo payload độc hại...
 >>> Gửi payload vào hàm swap...
-Transaction sent: 0xabcdef...
-Transaction confirmed!
->>> Kiểm tra số dư: 20000 WannaCoin (Đã về ví!)
+Transaction sent: 0xabcdef123456...
+Transaction confirmed! Block: 1337
+
+>>> Kiểm tra trạng thái...
+[+] WannaCoin Balance: 20000.0 (Đã về ví!)
+[+] Setup.isSolved(): True
+
 >>> MISSION SUCCESS! 🎉
 ```
 
-Cảm giác nhìn thấy số dư nhảy lên đúng là phê không tưởng! Bài này dạy cho mình bài học là: **Đừng bao giờ tin tưởng input của người dùng, nhất là khi bạn đang viết một cái VM phức tạp!** 😉
+### Làm sao để lấy Flag? 🚩
+Sau khi script báo `MISSION SUCCESS`, tức là:
+1.  Hàm `swap` của Aggregator đã chạy thành công payload của mình.
+2.  Lệnh `CALL` (Action 0) đã được thực thi, gọi `transferFrom` trên contract WannaCoin.
+3.  Tiền đã chuyển từ Aggregator về ví của mình.
+4.  Contract `Setup` đã xác nhận điều kiện thắng (`isSolved` trả về `true`).
+
+Lúc này, bạn quay lại trang Dashboard của giải đấu (hoặc nc tới server nếu có), submit địa chỉ ví hoặc token của bạn để hệ thống kiểm tra. Nếu `isSolved()` là true, hệ thống sẽ trả về flag cho bạn.
+
+**Flag của bài này là:**
+```
+WannaGame{Cu5t0m_VM_1s_Fun_But_D4ng3r0us_R1ght?}
+```
+
+*(Lưu ý: Flag này là ví dụ minh họa, flag thật sẽ phụ thuộc vào server của giải đấu).*
+
+### Bài học rút ra (Post-Mortem)
+Cảm giác nhìn thấy số dư nhảy lên và dòng chữ `isSolved: True` đúng là phê không tưởng! Bài này dạy cho mình bài học xương máu:
+*   **Đừng bao giờ tin tưởng input của người dùng**, nhất là khi bạn đang viết một cái VM phức tạp xử lý raw bytes.
+*   **Low-level Call (Action 0)** cực kỳ nguy hiểm nếu không được kiểm soát chặt chẽ đích đến (Target Address).
+
+Hẹn gặp lại các bạn ở những thử thách tiếp theo! Happy Hacking! 😉
