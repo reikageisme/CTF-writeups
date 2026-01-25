@@ -21,7 +21,7 @@ Danh sách các giải đấu tôi và team đã tham gia và có writeup:
 
 | Giải đấu | Năm | Thứ hạng (Team) | Ghi chú / Mảng đã làm |
 | :--- | :---: | :---: | :--- |
-| **VSL CTF** | 2026 | Top 31 | Web, Re, Crypto, Forensic, Misc |
+| **VSL CTF** | 2026 | Top 31 | Web, Re, Pwn, Misc |
 | **WannaGame Championship** | 2025 | -- | Web, Web3 (Smart Contract) |
 
 ## 📝 Bài viết nổi bật (Featured Writeups)
