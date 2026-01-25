@@ -1,27 +1,59 @@
-# 🚩 CTF Writeups
+# 🚩 CTF Writeups by ReiKage (Tanh)
 
-Chào mừng đến với kho tàng Writeups của mình! 👋
-Đây là nơi mình lưu trữ các bài giải (writeups), source code và những thứ hay ho mình học được qua các cuộc thi Capture The Flag (CTF).
+Chào mừng đến với kho lưu trữ writeup của tôi! Đây là nơi tôi ghi lại quá trình giải các bài Lab và các cuộc thi Capture The Flag (CTF) mà tôi đã tham gia.
+
+Mục tiêu chính của repo này là chia sẻ kiến thức, kỹ thuật khai thác và lưu giữ lại những bài học thú vị trong hành trình học tập ngành An toàn thông tin.
 
 ## 👤 Giới thiệu
-- **Author:** ReiKage
-- **Team:** 6h4T9pTpR0
-- **Focus:** Web Security, Web3/Blockchain, Reverse Engineering.
 
-## 🏆 Các giải đấu đã tham gia
+* **Tên/Nickname:** Phạm Tuấn Anh (Tanh / ReiKage)
+* **Trường:** HUTECH - Đại học Công nghệ TP.HCM
+* **Team:** 6h4T 9pT pR0
+* **Lĩnh vực tập trung:**
+    * 🌐 **Web Security** (Sở trường chính)
+    * 🧩 **Reverse Engineering**
+    * ⛓️ **Web3 / Blockchain Security**
+    * 🐧 Linux / Server Administration
 
-### 🔰 WannaGame Championship 2025
-Giải đấu này team mình đã chiến đấu hết mình và giải quyết được nhiều bài khoai. Dưới đây là một số writeup chi tiết:
+## 🏆 Giải đấu (Competitions)
 
-| Category | Challenge | Description | Link |
-|----------|-----------|-------------|------|
-| **Web** | [Trust](./WannaGame_2025_Writeups/Web/Trust/README.md) | Bypass xác thực Nginx bằng SSL Session Resumption. | [Read](./WannaGame_2025_Writeups/Web/Trust/README.md) |
-| **Web3** | [Freex](./WannaGame_2025_Writeups/Web3/Freex/README.md) | Khai thác lỗi logic trong Smart Contract (ghi nợ nhưng quên xóa). | [Read](./WannaGame_2025_Writeups/Web3/Freex/README.md) |
-| **Web3** | [WickedCraft](./WannaGame_2025_Writeups/Web3/WickedCraft/README.md) | Khai thác Custom VM trong Smart Contract (kết hợp Reverse Engineering). | [Read](./WannaGame_2025_Writeups/Web3/WickedCraft/README.md) |
+Danh sách các giải đấu tôi và team đã tham gia và có writeup:
 
-### 📂 Cấu trúc thư mục
-- `WannaGame_2025_Writeups/`: Chứa writeups và source code của giải WannaGame 2025.
+| Giải đấu | Năm | Thứ hạng (Team) | Ghi chú / Mảng đã làm |
+| :--- | :---: | :---: | :--- |
+| **VSL CTF** | 2026 | Top 31 | Web, Re, Crypto, Forensic, Misc |
+| **WannaGame Championship** | 2025 | -- | Web, Web3 (Smart Contract) |
 
-## 🤝 Kết nối
-Nếu bạn có thắc mắc hay muốn trao đổi về kỹ thuật, đừng ngần ngại liên hệ với mình nhé!
-Happy Hacking! 🚀
+## 📝 Bài viết nổi bật (Featured Writeups)
+
+Một số kỹ thuật và bài giải thú vị từ các giải đấu trên:
+
+### WannaGame Championship 2025
+* **[Web] Trust**: Bypass xác thực Nginx bằng kỹ thuật SSL Session Resumption.
+* **[Web3] Freex**: Khai thác lỗi logic trong Smart Contract (ghi nợ nhưng quên xóa).
+* **[Web3] WickedCraft**: Phân tích Custom VM trong Smart Contract (kết hợp Reverse Engineering).
+
+## 🛠️ Nền tảng luyện tập (Practice)
+
+* **Web Security Labs:**
+    * PortSwigger Web Security Academy
+    * RootMe / HackTheBox
+* **Other Challenges:**
+    * PicoCTF
+    * Cookie Arena
+
+## 🔧 Công cụ & Môi trường
+
+* **OS:** Kali Linux (Dual-boot) / Windows
+* **Ngôn ngữ:** Python, C, Bash script
+* **Tools:** Burp Suite, Docker, IDA Pro/Ghidra (cho Re), pwntools
+
+## 🤝 Liên hệ
+
+Nếu bạn có thắc mắc về writeup hoặc muốn trao đổi về kỹ thuật, hãy liên hệ với tôi qua:
+
+* **Github:** [github.com/reikageisme](https://github.com/reikageisme)
+* **Facebook/Discord:** (Thêm thông tin của bạn nếu muốn)
+
+---
+*Created by **ReiKage**. Happy Hacking!* 🚀
