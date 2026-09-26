@@ -1,0 +1,5 @@
+# CSCV2026 synthetic handout
+# challenge=REV-03
+# file=manifest.cddl
+Update = { path: tstr, digest: bytes, version: uint, nonce: bytes }
+

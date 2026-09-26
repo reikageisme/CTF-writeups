@@ -1,0 +1,2 @@
+/opt/modules/proof.mod
+protected=/etc,/usr/bin

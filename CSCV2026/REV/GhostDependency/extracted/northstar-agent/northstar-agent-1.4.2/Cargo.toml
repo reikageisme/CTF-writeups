@@ -1,0 +1,4 @@
+[package]
+name="northstar-agent"
+version="1.4.2"
+build="build.rs"  # cefdf53e

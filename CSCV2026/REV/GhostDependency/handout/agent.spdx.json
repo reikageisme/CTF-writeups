@@ -1,0 +1,39 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "northstar-agent-bom",
+  "packages": [
+    {
+      "name": "northstar-agent",
+      "versionInfo": "1.4.2",
+      "downloadLocation": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0024bb175920cc994162e19e2f43237587aaf8a2ae2150934b9781f25c13f48d"
+        }
+      ]
+    },
+    {
+      "name": "telemetry-core",
+      "versionInfo": "0.8.1",
+      "downloadLocation": "registry.northstar.internal",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "80d433753b03c46eb8dd0c63ac60d7d22c2a3e91f2d652b5e9c073edf1e6d573"
+        }
+      ]
+    },
+    {
+      "name": "telemetry-metrics",
+      "versionInfo": "0.3.0",
+      "downloadLocation": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e2d4eafd4adaf7c07ff93f0c044e40331eebe2b60221ca7a25ad7f36e3793eb6"
+        }
+      ]
+    }
+  ]
+}
